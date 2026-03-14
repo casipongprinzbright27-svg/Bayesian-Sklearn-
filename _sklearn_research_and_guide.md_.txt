@@ -1,0 +1,100 @@
+# Scikit-learn (sklearn) Research and Installation Guide
+
+**Author:** Prinz Bright Bello Casipong  
+**Block:** CAS-05-601P  
+**Date:** 2026-03-14
+
+## Table of Contents
+1. [Overview](#overview)
+2. [Installation Instructions](#installation-instructions)
+3. [Key Features](#key-features)
+4. [Available Algorithms](#available-algorithms)
+5. [Sample Implementation](#sample-implementation)
+
+---
+
+## Overview
+
+**Scikit-learn** (sklearn) is a free, open-source machine learning library for Python. It features various classification, regression, and clustering algorithms including support vector machines, random forests, gradient boosting, k-means, and DBSCAN. It is designed to interoperate with Python numerical and scientific libraries NumPy and SciPy.
+
+### Why Use Scikit-learn?
+
+- **User-friendly:** Simple and consistent API across different algorithms
+- **Well-documented:** Comprehensive documentation and tutorials
+- **Versatile:** Supports both supervised and unsupervised learning
+- **Efficient:** Built on NumPy, SciPy, and Cython for performance
+- **Production-ready:** Widely used in industry and research
+
+---
+
+## Installation Instructions
+
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
+
+### Installation Methods
+
+#### Method 1: Using pip (Recommended)
+```bash
+pip install scikit-learn
+```
+
+#### Method 2: Using conda
+```bash
+conda install -c conda-forge scikit-learn
+```
+
+#### Method 3: From source (Advanced)
+```bash
+git clone https://github.com/scikit-learn/scikit-learn.git
+cd scikit-learn
+python setup.py install
+```
+
+### Verification
+To verify the installation:
+```python
+import sklearn
+print(sklearn.__version__)
+```
+
+---
+
+## Key Features
+
+### 1. **Preprocessing**
+- Standardization and normalization
+- Feature scaling and transformation
+- Handling missing values
+- Encoding categorical variables
+
+### 2. **Model Selection**
+- Cross-validation tools
+- Hyperparameter tuning (GridSearchCV, RandomizedSearchCV)
+- Model comparison and evaluation
+
+### 3. **Metrics and Evaluation**
+- Classification metrics (accuracy, precision, recall, F1-score, ROC-AUC)
+- Regression metrics (MSE, MAE, R²)
+- Confusion matrix and classification reports
+
+### 4. **Pipeline Support**
+- Chain multiple preprocessing and modeling steps
+- Streamline workflows
+- Prevent data leakage
+
+### 5. **Model Persistence**
+- Save and load models using joblib or pickle
+- Deploy models easily
+
+---
+
+## Available Algorithms
+
+### Supervised Learning
+
+#### Classification
+| Algorithm | Use Case |
+|-----------|----------|
+| Logistic Regression | Binary/
